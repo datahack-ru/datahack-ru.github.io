@@ -1,0 +1,88 @@
+@import "../../colors.scss";
+@import "../../mixins.scss";
+
+.profile {
+  background-color: #231953;
+  padding: 50px 0 64px;
+  flex-grow: 1;
+
+  &__header {
+    @include header-bg(376px);
+    background-image: url("../../public/images/header-profile.png");
+
+    .ui .header {
+      padding-top: 80px;
+      font-size: 3.2rem;
+      color: #272c61;
+    }
+  }
+
+  &__level {
+    background-color: #f1f5fb;
+    color: $color-dark;
+    font-weight: bolder;
+    padding: 10px 25px;
+  }
+
+  .ui.container {
+    padding: 0 12px;
+  }
+
+  table {
+    background: #f1f5fb;
+    margin-top: 20px;
+    border-collapse: collapse;
+    color: $color-dark;
+    width: 100%;
+  }
+
+  table td,
+  table th {
+    border: solid 1px #231953;
+    padding: 9px 20px;
+    font-size: 0.9rem;
+  }
+
+  table thead th {
+    background-color: $color-blue;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #d9dffb;
+  }
+
+  // MOBILE
+
+  &__header-mobile {
+    min-height: 295px;
+    background-size: cover;
+
+    .ui .header {
+      padding-top: 60px;
+    }
+  }
+
+  &-mobile {
+    padding: 15px 0 60px;
+
+    .table-wrapper {
+      position: relative;
+      height: 560px;
+    }
+
+    table {
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      position: absolute;
+      top: 150px;
+      left: calc(50vw - 323px);
+      width: 560px;
+    }
+
+    table td,
+    table th {
+      padding: 5px 10px;
+    }
+  }
+}

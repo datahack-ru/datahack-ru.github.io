@@ -1,0 +1,32 @@
+
+.sma-legend {
+  width: 96px;
+  height: 70px;
+  position: absolute;
+  padding: 8px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.23);
+  text-align: left;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.price-chart-legend-row1 {
+  position: absolute;
+  left: 24px;
+  top: 20px;
+  z-index: 1;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+.price-chart-legend-row2 {
+  position: absolute;
+  left: 24px;
+  top: 44px;
+  z-index: 1;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}

@@ -1,0 +1,231 @@
+@import "../../colors.scss";
+@import "../../mixins.scss";
+
+.referrals-tree {
+  background: linear-gradient(to bottom, #9eafff, #f0f2fd 500px);
+  //background-color: #291f5a !important;
+  padding: 35px 0 50px;
+  flex-grow: 1;
+
+  &__header {
+    @include header-bg(376px);
+    background-image: url("../../public/images/header-referral.png");
+    text-align: left;
+
+    .ui .header {
+      padding-top: 175px;
+      padding-left: 60px;
+      font-size: 3.3rem;
+      color: #272c61;
+      margin-bottom: 0;
+    }
+
+    p {
+      padding-left: 60px;
+      color: #1b0f2d;
+      width: 550px;
+      font-size: 1.14rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+  }
+
+  .ui.container {
+    padding: 0 30px;
+  }
+
+  .ui.input {
+    width: 100%;
+  }
+
+  .ui.search {
+    font-size: 0.95rem;
+  }
+
+  .ui.icon.input > i.icon {
+    font-size: 2rem;
+    color: #836dec;
+  }
+
+  .ui.selection.dropdown {
+    color: $color-dark;
+    font-size: 1.05rem;
+  }
+
+  label {
+    display: block;
+    font-size: 1.05rem;
+    margin: 10px 0 5px;
+  }
+
+  &__menu {
+    font-size: 1rem;
+    padding-bottom: 10px;
+
+    a {
+      margin-right: 30px;
+    }
+  }
+
+  &__btn-group {
+    display: flex;
+    justify-content: center;
+    //margin: 40px 0 65px;
+
+    .ui.button {
+      font-size: 0.7rem;
+      width: 109px;
+      background-color: #878dbb;
+      color: $color-white;
+    }
+  }
+
+  &__row-teams,
+  &__row-blocks {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+  }
+
+  &__row-teams {
+    padding-bottom: 28px;
+    align-items: flex-start;
+  }
+
+  &__accounts {
+    margin-top: 35px;
+    background-color: #8da1ff;
+    width: 355px;
+    //height: 162px;
+  }
+
+  &__account {
+    width: 102px;
+    height: 162px;
+    background-image: url("../../public/images/referral-team.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid 2px #f0f2fd;
+    font-size: 0.9rem;
+    text-align: center;
+    padding-top: 125px;
+  }
+
+  &__block,
+  &__block-empty {
+    width: 105px;
+    height: 105px;
+    background-color: #dbdff9;
+    text-align: center;
+    color: $color-dark;
+  }
+
+  &__block {
+    padding-top: 10px;
+    font-size: 0.9rem;
+
+    b {
+      display: block;
+      color: #7a65de;
+      font-size: 2.2rem;
+      padding-bottom: 5px;
+    }
+
+    p {
+      padding-top: 10px;
+      font-weight: bolder;
+    }
+  }
+
+  &__block-empty {
+    background-image: url("../../public/images/referral-empty.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 0.95rem;
+    padding-top: 70px;
+  }
+
+  // mobile
+
+  &__header-mobile {
+    .ui .header {
+      padding: 175px 0 10px;
+      font-size: 2.1rem;
+      font-weight: bold;
+      color: #272c61;
+      margin-bottom: 0;
+    }
+
+    p {
+      padding-left: 0;
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  }
+
+  &-mobile {
+    .ui.container {
+      padding: 5px;
+    }
+
+    .referral__btn-group {
+      flex-direction: column;
+      margin: 20px 0;
+
+      .ui.button {
+        width: 100%;
+        margin: 2px;
+        padding: 12px;
+      }
+    }
+
+    .referral__row-teams {
+      flex-wrap: wrap;
+    }
+
+    .referral__accounts {
+      order: 1;
+      width: 100%;
+    }
+
+    .referral__team {
+      width: 50%;
+      font-size: 0.7rem;
+      padding: 1px;
+      img {
+        display: none !important;
+      }
+    }
+
+    .referral__team .ui.grid > .row > .column {
+      font-size: 0.7rem;
+    }
+
+    .referral__block,
+    .referral__block-empty {
+      width: 60px;
+    }
+
+    .referral__block-empty {
+      font-size: 0.7rem;
+      line-height: 1.2;
+    }
+
+    .referral__block {
+      padding-top: 10px;
+      font-size: 0.7rem;
+
+      b {
+        font-size: 1.7rem;
+        padding-bottom: 0;
+      }
+
+      p {
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

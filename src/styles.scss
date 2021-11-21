@@ -1,0 +1,86 @@
+@import "./colors.scss";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #132344;
+  color: $color-white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: normal;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 1378px;
+  width: 100%;
+  margin-top: 75px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-yellow {
+  color: $color-link-yellow;
+  text-decoration: underline;
+}
+
+.link-blue {
+  color: $color-blue-text;
+  text-decoration: underline;
+}
+
+.link-orange {
+  color: $color-link-orange;
+  text-decoration: underline;
+}
+
+.blue-link {
+  color: $color-blue-text;
+  text-decoration: underline;
+}
+
+.btn-blue {
+  background-color: $color-blue !important;
+}
+
+.scrollTop {
+  cursor: pointer;
+  position: fixed !important;
+  bottom: 40px;
+  right: 80px;
+}
+
+.main-menu-mobile {
+  font-size: 1.1rem !important;
+}
+
+.fullPage {
+  width: 100vw;
+  height: 100vh;
+  //background-color: #39399e;
+  margin: 0 !important;
+  display: flex;
+
+  img {
+    align-self: center;
+    width: 100vw;
+  }
+}
+
+.fullPage-mobile {
+  img {
+    width: unset !important;
+    max-width: unset !important;
+    margin-left: calc(50vw - 970px) !important;
+  }
+}

@@ -1,0 +1,143 @@
+@import "./colors.scss";
+
+.ui .header {
+  color: $color-white;
+  padding-bottom: 0.7rem;
+}
+
+.ui.container {
+  font-size: 14pt;
+  max-width: 1024px !important;
+}
+
+.ui.menu.fixed {
+  height: 75px;
+}
+
+.ui.menu {
+  background-color: $color-body-background;
+  border-bottom: none;
+
+  .header.item.logo {
+    font-size: 1.6rem;
+    padding-right: 34px;
+  }
+
+  .item,
+  .header.item {
+    font-size: 1.05rem;
+    font-weight: normal !important;
+    padding-left: 11px;
+    padding-right: 11px;
+    //color: $color-menu-item !important;
+    color: #ffae00 !important;
+  }
+
+  .dropdown.item:hover,
+  .header.item:hover {
+    //color: $color-menu-item;
+    color: #ffae00;
+  }
+
+  .active.item {
+    border-bottom: solid 5px $color-link-orange;
+    //color: $color-menu-item;
+    color: #ffae00;
+    font-weight: unset;
+    background: unset;
+    box-shadow: unset;
+    padding-bottom: 11px;
+  }
+
+  .ui.dropdown.active {
+    border-bottom: none !important;
+    margin-bottom: 4px !important;
+  }
+
+  .ui.dropdown .menu > .active.item {
+    border-bottom: unset;
+    background-color: $color-link-orange !important;
+  }
+
+  .active.item::after {
+    display: none;
+  }
+}
+
+.ui.vertical.menu .active.item {
+  border-left: solid 5px $color-link-orange;
+  border-bottom: unset;
+}
+
+.ui.search,
+.ui.selection.dropdown {
+  background-color: $color-input-background;
+  color: $color-dark;
+  font-size: 0.85rem;
+  border-radius: 0;
+}
+
+.ui.dropdown .menu > .item {
+  font-size: 0.85rem;
+}
+
+.ui.search .prompt {
+  border-radius: 3px;
+}
+
+.ui.icon.input > i.icon {
+  color: $color-link-orange;
+}
+
+.ui.input > input,
+.ui.input > input:focus {
+  background-color: $color-input-background;
+  color: $color-dark;
+  border-radius: 0;
+}
+
+.ui.table thead th {
+  background-color: #bfdef9;
+  font-weight: normal;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.ui.table td {
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.ui.table td.p0 {
+  padding: 0px;
+}
+
+.ui.button {
+  border-radius: 0;
+}
+
+.ui.progress {
+  background: #e5e5e5;
+  margin: 5px 0 22px;
+}
+
+.ui.progress .bar {
+  background: #d59def;
+}
+
+.ui.progress > .label {
+  font-size: 0.7rem;
+  margin-top: 0;
+}
+
+.main-menu-mobile.ui.menu {
+  .header.item.logo {
+    font-size: 1.25rem;
+    padding-right: 5px;
+  }
+
+  .ui.dropdown {
+    padding-right: 30px;
+  }
+}

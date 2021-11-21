@@ -1,0 +1,118 @@
+@import "../../colors.scss";
+@import "../../mixins.scss";
+
+.nft {
+  &__header {
+    @include header-bg(376px);
+    background-image: url("../../public/images/header-nft.png");
+
+    .ui .header {
+      padding-top: 30px;
+      font-size: 6.3rem;
+      font-weight: 600;
+      color: $color-white;
+    }
+  }
+
+  &__section-1 {
+    background-color: #0b0b23;
+
+    .ui.button {
+      background-color: #5863c9;
+    }
+  }
+
+  &__section-2 {
+    background-color: #20183f;
+
+    .ui.button {
+      background-color: #7b5fb6;
+    }
+  }
+
+  &__section-3 {
+    background-color: #2e2356;
+    flex-grow: 1;
+
+    .ui.button {
+      background-color: #40ba8b;
+    }
+  }
+
+  &__section-1,
+  &__section-2,
+  &__section-3 {
+    padding-top: 40px;
+
+    .ui .header {
+      color: $color-link-orange;
+      padding: 10px 0 0;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.3rem;
+      margin-bottom: 5px;
+    }
+
+    .ui.button {
+      color: $color-white;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__section-1,
+  &__section-3 {
+    img {
+      border: solid 1px #ffad00;
+    }
+  }
+
+  &__button-wrapper {
+    padding: 60px 0 70px;
+    text-align: center;
+  }
+
+  // MOBILE
+
+  &__header-mobile {
+    background-position: 50% bottom;
+    min-height: 345px;
+
+    .ui .header {
+      font-size: 2.4rem;
+      padding-top: 53px;
+    }
+  }
+
+  &__section-1-mobile,
+  &__section-2-mobile,
+  &__section-3-mobile {
+    padding-top: 5px;
+
+    img {
+      width: 90%;
+    }
+
+    .ui .header {
+      padding: 10px 0 0;
+
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      line-height: 1.1;
+      padding-bottom: 6px;
+    }
+
+    .ui.button {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__button-wrapper-mobile {
+    padding: 30px 0 35px;
+  }
+}

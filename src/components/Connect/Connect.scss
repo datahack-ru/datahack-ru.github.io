@@ -1,0 +1,33 @@
+@import "../../colors.scss";
+
+.connect {
+  &__wrapper {
+    position: relative;
+  }
+
+  position: absolute;
+  margin-top: 0px;
+  right: 0;
+  top: 20px;
+
+  .ui.button {
+    background-color: #536fb7;
+    color: $color-white;
+    font-weight: normal;
+    margin: 1px;
+    font-size: 1.1rem;
+    padding: 10px 15px !important;
+  }
+
+  &__main-btn {
+    background-color: #bfdef9 !important;
+    color: #272c61 !important;
+  }
+}
+
+.connect-mobile {
+  top: 0px;
+  .ui.button {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,245 @@
+@import "../../colors.scss";
+@import "../../mixins.scss";
+
+.team {
+  background-color: #291f5a;
+  padding: 23px 0 50px;
+  flex-grow: 1;
+
+  &__header {
+    @include header-bg(373px);
+    background-image: url("../../public/images/header-team.png");
+
+    h1 {
+      padding-top: 95px;
+      font-size: 3.2rem;
+      color: $color-white;
+      line-height: 1.1;
+      letter-spacing: 0.03rem;
+    }
+
+    p {
+      padding-top: 5px;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__content {
+    background-color: #f1f5fb;
+    margin: 0 10px;
+    color: $color-dark;
+    font-size: 0.9rem;
+
+    .ui.header {
+      color: $color-dark;
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    label {
+      margin-right: 5px;
+    }
+
+    .ui.grid,
+    .ui.grid + .grid {
+      margin: 0;
+    }
+  }
+
+  &__section-1,
+  &__section-3,
+  &__section-4 {
+    border-bottom: solid 1px $color-dark;
+    padding-bottom: 5px !important;
+    margin: 0 !important;
+  }
+
+  &__section-1 {
+    padding-bottom: 5px !important;
+
+    .ui.button {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+
+    .ui.input {
+      width: 100%;
+    }
+
+    .ui.input > input,
+    .ui.input > input:focus {
+      background-color: #d0d6f3;
+      color: $color-dark;
+      border-radius: 0;
+      border: none;
+    }
+
+    .ui.selection.dropdown {
+      border: none;
+      border-radius: 0;
+      color: $color-dark;
+      background-color: #bdc9fb;
+    }
+  }
+
+  &__section-2 {
+    padding-bottom: 5px !important;
+    .ui.button {
+      background-color: #bdc9fb;
+      font-size: 0.7rem;
+      padding: 8px 24px;
+    }
+  }
+  &__section-3 {
+    padding-bottom: 25px !important;
+  }
+
+  &__section-4 {
+    padding: 25px 15px 20px !important;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+
+  &__section-5 {
+    padding: 0 !important;
+    font-size: 0.9rem;
+    line-height: 1.2;
+
+    .ui.grid > .row {
+      padding: 0 !important;
+    }
+
+    .row-header {
+      padding-bottom: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    b {
+      color: #5863c9;
+    }
+
+    .column {
+      padding: 10px 0;
+    }
+  }
+}
+
+.row-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group {
+  display: flex;
+}
+
+.br {
+  border-right: solid 1px $color-dark;
+}
+
+// mobile
+
+.team__header-mobile {
+  background-size: cover;
+  background-position: 75%;
+
+  h1 {
+    padding-top: 35px;
+    font-size: 1.15rem;
+    line-height: 1.3;
+  }
+
+  p {
+    padding-top: 140px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+}
+
+.team-mobile {
+  .team__content {
+    margin: 0 5px;
+  }
+
+  label {
+    margin-top: 10px;
+    display: block;
+  }
+
+  .input-group {
+    flex-direction: column;
+
+    .ui.button {
+      margin: 7px 0 0;
+    }
+  }
+
+  .ui.grid > .row,
+  .team__section-4,
+  .ui.stackable.grid > .row.team__section-5 > .column {
+    border-bottom: solid 6px #291f5a;
+  }
+
+  .ui.stackable.grid > .row.team__section-1 > .column {
+    padding: 0 !important;
+  }
+
+  .ui.stackable.grid > .row.team__section-3 > .column {
+    text-align: left;
+    padding: 0 1rem !important;
+  }
+
+  .team__section-4,
+  .ui.stackable.grid > .row.team__section-5 > .column {
+    font-size: 0.8rem !important;
+  }
+
+  .ui.stackable.grid > .row.team__section-5 {
+    border: none !important;
+  }
+
+  .team__section-1 {
+    padding: 12px !important;
+
+    h3 {
+      font-size: 1.3rem;
+      padding-top: 20px;
+    }
+  }
+
+  .team__section-2 {
+    .column {
+      display: flex !important;
+      flex-direction: column;
+    }
+    .ui.button {
+      padding: 14px;
+      margin: 2px 0;
+    }
+  }
+
+  .team__section-2 {
+    .ui.grid > column {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .row-between.dotted dt {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+
+  .row-between.dotted dd,
+  .row-between.dotted dt {
+    white-space: nowrap;
+    margin: 2px 0;
+  }
+
+  .row-between.dotted dt:after {
+    content: ".......................................................................";
+    letter-spacing: 3px;
+  }
+}

@@ -1,0 +1,154 @@
+@import "../../colors.scss";
+
+.farm {
+  background-color: #f2f6fc;
+  padding: 10px;
+  text-align: center;
+  color: #000;
+
+  .ui.header {
+    color: #000;
+    font-size: 1.55rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .ui.table {
+    margin-top: 25px;
+  }
+
+  .ui.table td {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 5px 20px !important;
+  }
+
+  &__mark {
+    background-color: #d9dffc;
+  }
+
+  &__mark-1 {
+    background-color: #a495e0;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+    .ui.button {
+      flex: 1;
+      font-size: 0.9rem;
+      font-weight: normal;
+      margin: 5px 1px;
+      color: #fff;
+    }
+  }
+
+  &__btn-1.ui.button {
+    background-color: #5863c9;
+  }
+
+  &__btn-2.ui.button {
+    background-color: #888dbc;
+  }
+
+  &__btn-3.ui.button {
+    background-color: #c95858;
+  }
+
+  &__btn-4.ui.button {
+    background-color: $color-link-orange;
+  }
+
+  &__links {
+    //font-size: 0.9rem;
+    //line-height: 1.2;
+    .ui.button {
+      flex: 1;
+      font-size: 0.9rem;
+      font-weight: normal;
+      margin: 5px 1px;
+      color: #fff;
+    }
+
+    .ui.header {
+      font-size: 1.15rem;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+  }
+
+  // mobile
+
+  &-mobile {
+    .ui.header {
+      font-size: 1.15rem;
+      padding-top: 15px;
+    }
+
+    p {
+      font-size: 0.9rem;
+      padding-top: 5px;
+      margin-bottom: 0;
+    }
+
+    .ui.table {
+      border: none;
+      margin: 7px 0;
+    }
+
+    .ui.table:not(.unstackable) tr {
+      padding: 3px;
+      border: solid 2px #f2f6fc !important;
+      box-shadow: none !important;
+    }
+
+    .ui.table td {
+      font-size: 0.9rem;
+      font-weight: normal !important;
+      text-align: left;
+    }
+
+    .farm__mark-1 td {
+      text-align: center !important;
+    }
+  }
+
+  &__buttons-mobile {
+    flex-direction: column;
+    margin-top: 10px;
+
+    .ui.button {
+      margin: 2px 0;
+      padding: 11px 0 !important;
+    }
+  }
+
+  &__period.ui.grid {
+    font-size: 0.8rem;
+    margin: 5px 0 0;
+  }
+
+  &__period.ui.grid > .row {
+    padding: 0;
+    background-color: #d9dffc;
+    margin: 1px 0;
+    text-align: left;
+    padding: 1px;
+  }
+
+  &__bonus {
+    background-color: #fff;
+    margin: 4px 1px;
+    padding: 15px 10px;
+    font-size: 0.7rem;
+    text-align: left;
+    line-height: 1.2;
+  }
+}

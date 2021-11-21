@@ -1,0 +1,12 @@
+@mixin header-bg($property) {
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  min-height: $property;
+
+  .ui .header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0 13px 13px $color-text-shadow;
+    font-weight: bold;
+  }
+}

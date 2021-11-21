@@ -1,0 +1,77 @@
+@import "../../colors.scss";
+
+.unavailable {
+  margin-top: -75px;
+  background-color: #071944;
+  background-image: url("../../public/images/layout/technical-works.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 767px;
+  position: relative;
+  text-align: center;
+
+  &__home {
+    padding-top: 180px;
+    padding-left: 130px;
+    text-align: left;
+
+    img {
+      width: 125px;
+    }
+  }
+
+  &__message-wrapper {
+    text-align: center;
+    padding-left: 350px;
+    padding-top: 90px;
+  }
+
+  &__message {
+    display: inline-block;
+    width: 265px !important;
+    height: 270px;
+    background-image: url("../../public/images/layout/message-box.png");
+    background-size: cover;
+    padding: 80px 30px 0;
+    text-align: center;
+    font-size: 1.12rem;
+    line-height: 1.4rem;
+    color: $color-dark;
+  }
+
+  &-mobile {
+    background-image: url("../../public/images/layout/technical-works-mobile.png");
+    min-height: 100vh;
+
+    .unavailable__home {
+      padding-top: 40px;
+      padding-left: 10px;
+      text-align: left;
+
+      a {
+        position: absolute;
+        color: $color-white;
+        left: 160px;
+        top: 100px;
+        font-size: 1.3rem;
+        line-height: 1.1;
+      }
+    }
+
+    .unavailable__message-wrapper {
+      text-align: center;
+      padding-left: 0;
+      padding-top: 150px;
+    }
+
+    .unavailable__message {
+      display: inline-block;
+      width: 200px !important;
+      height: 200px;
+      padding: 70px 40px 0;
+      text-align: center;
+      font-size: 1.05rem;
+      line-height: 1;
+    }
+  }
+}

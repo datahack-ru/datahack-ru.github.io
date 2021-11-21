@@ -1,0 +1,91 @@
+@import "../../colors.scss";
+@import "../../mixins.scss";
+
+.dashboard {
+  background-color: #bec9fc;
+  padding: 42px 0 64px;
+  flex-grow: 1;
+
+  &__header {
+    @include header-bg(374px);
+    background-image: url("../../public/images/header-dashboard.png");
+
+    .ui .header {
+      padding-top: 70px;
+      font-size: 3.2rem;
+      font-weight: bold;
+      color: $color-white;
+    }
+  }
+
+  &__panel {
+    background-color: #f1f5fb;
+    color: $color-dark;
+
+    .ui.button {
+      background-color: $color-blue;
+      color: $color-white;
+      font-size: 0.95rem;
+      padding: 9px 12px;
+      margin: 0;
+    }
+
+    .ui.header {
+      color: $color-dark;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  }
+
+  &__panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 14px 0;
+  }
+
+  &__panel-content {
+    font-size: 0.9rem;
+    padding: 5px 14px 40px;
+  }
+
+  .ui.table {
+    margin-top: -10px;
+    border: none;
+    border-collapse: collapse;
+  }
+
+  .ui.table td,
+  .ui.table th {
+    font-size: 0.8rem;
+    padding: 5px !important;
+  }
+
+  .ui.table th,
+  .ui.table td {
+    background-color: #f1f5fb;
+    border: solid 1px #bec9fc;
+  }
+
+  .ui.table .separator {
+    background-color: #bec9fc;
+    color: $color-white;
+  }
+
+  p {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .pt-1 {
+    padding-top: 20px !important;
+  }
+
+  &-mobile {
+    .ui.table td,
+    .ui.table th {
+      font-size: 0.7rem;
+      padding: 3px !important;
+    }
+  }
+}

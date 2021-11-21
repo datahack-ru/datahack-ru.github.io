@@ -1,0 +1,102 @@
+@import "../../colors.scss";
+@import "../../mixins.scss";
+
+.wallet {
+  background-color: #231954;
+  padding: 35px 0 40px;
+  flex-grow: 1;
+
+  &__header {
+    @include header-bg(376px);
+    background-image: url("../../public/images/header-profile.png");
+
+    .ui .header {
+      padding-top: 80px;
+      font-size: 3.2rem;
+      color: #272c61;
+    }
+  }
+
+  .ui.container {
+    padding: 0 32px;
+  }
+
+  .ui .header {
+    font-size: 1.55rem;
+    font-weight: bold;
+    color: #819dfd;
+  }
+
+  .ui.button {
+    background-color: $color-yellow;
+    color: $color-white;
+    border-radius: 3px;
+    padding: 6px 12px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  .ui.table {
+    background: #f1f6fc;
+    border-radius: 0;
+    border-collapse: collapse;
+  }
+  .ui.table td,
+  .ui.table th {
+    border: solid 1px #231953;
+    padding: 9px 25px;
+    font-size: 0.9rem;
+
+    b {
+      font-size: 1rem;
+    }
+  }
+
+  .ui.table thead th,
+  .ui.table tr:nth-child(even) {
+    background-color: #d8e0fd;
+  }
+  .ui.table .marker {
+    color: #ffb509;
+  }
+
+  .mt-1 {
+    margin-top: 40px !important;
+  }
+
+  // mobile
+
+  &__header-mobile {
+    .ui .header {
+      font-size: 2.8rem;
+      padding-top: 65px;
+    }
+  }
+
+  &-mobile {
+    .ui.container {
+      padding: 0 5px;
+    }
+    .ui .header {
+      margin: 0 !important;
+      padding: 0;
+    }
+
+    .ui.button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+    }
+
+    .ui.table td,
+    .ui.table th {
+      padding: 5px;
+    }
+  }
+}

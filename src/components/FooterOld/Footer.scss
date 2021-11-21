@@ -1,0 +1,43 @@
+@import "../../colors.scss";
+
+.footer {
+  max-width: 1378px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__bg {
+    background-image: url("../../public/images/footer.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 340px;
+  }
+
+  .ui.container {
+    padding: 58px 25px 0;
+  }
+
+  &__rights {
+    padding-top: 118px !important;
+    font-size: 0.95rem;
+    line-height: 1.06rem;
+  }
+
+  .icons {
+    padding-left: 22%;
+  }
+
+  img {
+    width: 45px;
+  }
+}
+
+.footer-mobile {
+  img {
+    margin: 10px;
+    width: 65px;
+  }
+
+  .footer__bg {
+    background-position: 61%;
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../../../colors.scss";
+
+.referral__team {
+  width: 280px;
+  color: #000;
+  font-size: 0.9rem;
+
+  &-header,
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &-header {
+    padding-bottom: 5px;
+    padding-left: 3px;
+
+    .ui.button {
+      background-color: #7965dd;
+      padding: 7px 10px;
+      margin-right: 0;
+      border-radius: 7px;
+    }
+  }
+  &-footer {
+    background-color: $color-blue !important;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #fff;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  &-body {
+    background-color: #f1f5fb;
+    padding: 10px 0;
+  }
+
+  .ui.button {
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+
+  .ui.grid {
+    margin: 0;
+  }
+  .ui.grid > .row {
+    padding: 0;
+  }
+
+  .ui.grid > .row > .column {
+    padding: 0 10px;
+    font-size: 0.8rem;
+    line-height: 1.15;
+  }
+}
