@@ -10,7 +10,7 @@
 /PDF
 # production
 /build
-
+#/src
 /temp
 
 # misc
