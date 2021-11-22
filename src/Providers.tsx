@@ -17,7 +17,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 localforage.config({
-  name: 'CosmoSwap.space',
+  name: 'datahack-ru.github.io',
   version: 2.0,
   storeName: 'keyValuePairs',
   description: 'some description',

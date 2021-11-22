@@ -58,7 +58,7 @@ export const walletconnect = new WalletConnectConnector({
 export const walletlink = new WalletLinkConnector({
   url: NETWORK_URL,
   appName: 'CosmoSwap',
-  appLogoUrl: 'https://cosmoswap.space/apple-icon-144x144.png',
+  appLogoUrl: 'https://datahack-ru.github.io/apple-icon-144x144.png',
 });
 
 export const connectorsByName: { [connectorName in ConnectorNames]: any } = {
