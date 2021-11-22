@@ -43,8 +43,8 @@ export const configureStore = (preloadedState = {}) => {
 
   const options = {
     domains: {
-      root: isProduction ? 'https://cosmoswap.space' : `http://${window.location.hostname}:3000`,
-      api: isProduction ? 'https://api.cosmofund.space' : `http://${window.location.hostname}:3100`,
+      root: isProduction ? 'https://datahack-ru.github.io' : `http://${window.location.hostname}:3000`,
+      api: isProduction ? 'https://api.datahack-ru.github.io' : `http://${window.location.hostname}:3100`,
     },
   };
   const apiOptions = { apiKey: null, options, };

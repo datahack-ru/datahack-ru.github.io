@@ -1,7 +1,26 @@
 @import "../../colors.scss";
 @import "../../mixins.scss";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+$font-sans: 'Open Sans', sans-serif;
 
-.nft {
+p.cvirtual 
+{
+  font-size: 1.15em;
+  line-height: 1.35rem;
+  margin-bottom: 5px;
+  font-weight:300;
+  font-style: $font-sans;
+}
+
+button.cvirtual
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+  vertical-align:middle;
+}
+
+.cvirtual {
   &__header {
     @include header-bg(376px);
     background-image: url("../../public/images/header-nft.png");
@@ -50,11 +69,7 @@
       margin-top: 0;
     }
 
-    p {
-      font-size: 1rem;
-      line-height: 1.3rem;
-      margin-bottom: 5px;
-    }
+   
 
     .ui.button {
       color: $color-white;
@@ -102,9 +117,9 @@
     }
 
     p {
-      font-size: 0.95rem;
-      line-height: 1.1;
-      padding-bottom: 6px;
+      font-size: 1.1em;
+      line-height: 1.25em;
+      padding-bottom: 10px;
     }
 
     .ui.button {
