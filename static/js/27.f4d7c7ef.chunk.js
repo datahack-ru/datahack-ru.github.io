@@ -1,0 +1,2 @@
+(this["webpackJsonp@cosmofund/cosmoswap-frontend"]=this["webpackJsonp@cosmofund/cosmoswap-frontend"]||[]).push([[27],{1382:function(n,o){},848:function(n,o){},849:function(n,o){},858:function(n,o){},859:function(n,o){},879:function(n,o){},881:function(n,o){},882:function(n,o){},885:function(n,o){},886:function(n,o){},891:function(n,o){},892:function(n,o){},900:function(n,o){},906:function(n,o){},909:function(n,o){}}]);
+//# sourceMappingURL=27.f4d7c7ef.chunk.js.map
